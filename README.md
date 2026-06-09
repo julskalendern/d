@@ -1,12 +1,12 @@
 <h1>Разворачиваем носки с помощью terraform и docker swarm</h1>
 <i>чувствительные данные (токены яндекс облака, путь к ssh) указываются через <b>terraform.tfvars</b>,<br>
 <br>Пример файла:
-```
- token                = "y*****"
+<pre>
+token                = "y*****"
 folder_id            = "b******o"
 service              = "a******9"
 ssh_private_key_path = "~/.ssh/*****"
-```
+</pre>
 
 </i>
 <p> основная конфигурация расположена в ya.tf. </p>
