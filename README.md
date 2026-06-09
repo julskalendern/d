@@ -1,15 +1,19 @@
 <h1>Разворачиваем носки с помощью terraform и docker swarm</h1>
 <i>чувствительные данные (токены яндекс облака, путь к ssh) указываются через <b>terraform.tfvars</b>,<br>
 <br>Пример файла:
-<blockquote>
+```
  token                = "y*****"
 folder_id            = "b******o"
 service              = "a******9"
 ssh_private_key_path = "~/.ssh/*****"
-</blockquote>
+```
 
 </i>
 <p> основная конфигурация расположена в ya.tf. </p>
+<p><b>Как выглядят зависимости ресурсов</b></p>
+<img src="screens/graph.svg">
+
+<br>
 <p> После разворачивания ВМ установка docker, иницииация docker-swarm происходит через null_resource </p>
 <p> ВМ присоились эти ip</p>
 <img src="screens/outputs.png">
